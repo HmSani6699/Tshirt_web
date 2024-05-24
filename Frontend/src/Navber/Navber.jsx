@@ -1,7 +1,7 @@
 import React from "react";
 import { RiSearchLine } from "react-icons/ri";
 import { GoLock } from "react-icons/go";
-import { FaUserAlt } from "react-icons/fa";
+import { SlUser } from "react-icons/sl";
 import { GoGitCompare } from "react-icons/go";
 import { GoHeart } from "react-icons/go";
 
@@ -43,8 +43,9 @@ const Navber = () => {
             </div>
             <GoLock />
           </div>
-
-          <FaUserAlt />
+          <div className="h-[35px] w-[35px] bg-white flex items-center justify-center rounded-full relative">
+            <SlUser />
+          </div>
         </div>
       </div>
     </div>

@@ -62,7 +62,12 @@ const Gallery = () => {
           </h2>
         </div>
 
-        <GalleryCart />
+        {/* Product container */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-[25px] mt-[40px]">
+          {Array.from({ length: 12 }).map((item) => (
+            <GalleryCart />
+          ))}
+        </div>
       </div>
     </div>
   );
