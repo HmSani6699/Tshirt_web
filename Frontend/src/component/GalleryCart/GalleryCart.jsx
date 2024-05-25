@@ -10,24 +10,31 @@ import { SlEye } from "react-icons/sl";
 
 const GalleryCart = () => {
   return (
-    <div className="border rounded-md">
+    <div className=" rounded-md">
       {/* Cart image */}
-      <div className="h-[300px] bg-[#eeeeee] relative group">
+      <div className="h-[270px] bg-[#eeeeee] relative group">
         <img
           className="h-full w-full rounded-md"
           src={cart_image}
           alt="Cart item"
         />
         {/* Hover content */}
-        <div className="absolute inset-0 bg-[#cbc9c9a2] transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-10 flex flex-col items-end gap-[15px] pt-[10px] pr-[10px]">
-          <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
-            <GoHeart className="hover:text-white" />
+        <div className="absolute inset-0 bg-[#cbc9c9a2] transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-10 ">
+          <div className="flex flex-col items-end  gap-[15px] pt-[15px] pr-[10px]">
+            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
+              <GoHeart className="hover:text-white" />
+            </div>
+            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
+              <SlEye className="hover:text-white" />
+            </div>
+            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
+              <GoLock className="hover:text-white" />
+            </div>
           </div>
-          <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
-            <SlEye className="hover:text-white" />
-          </div>
-          <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
-            <GoLock className="hover:text-white" />
+          <div className="absolute bottom-0 w-full flex items-center justify-center">
+            <button className="bg-red-400 w-full text-white py-[10px]">
+              QUICK VIEW
+            </button>
           </div>
         </div>
         {/* Discount div */}
