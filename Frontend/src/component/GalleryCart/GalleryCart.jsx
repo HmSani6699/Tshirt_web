@@ -7,6 +7,7 @@ import {
 } from "react-icons/md";
 import { GoHeart, GoLock } from "react-icons/go";
 import { SlEye } from "react-icons/sl";
+import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 
 const GalleryCart = () => {
   return (
@@ -31,8 +32,8 @@ const GalleryCart = () => {
               <GoLock className="hover:text-white" />
             </div>
           </div>
-          <div className="absolute bottom-0 w-full flex items-center justify-center">
-            <button className="bg-red-400 w-full text-white py-[10px]">
+          <div className="absolute bottom-0 w-full flex items-center bg-red-400 justify-center">
+            <button className=" w-full text-white py-[10px] ">
               QUICK VIEW
             </button>
           </div>

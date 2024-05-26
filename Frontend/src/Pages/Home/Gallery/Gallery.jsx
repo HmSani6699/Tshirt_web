@@ -5,7 +5,7 @@ const Gallery = () => {
   const [isOpenTab, setIsOpenTab] = useState("Product");
   return (
     <div>
-      <div className="max-w-[1200px] mx-auto mt-[50px]">
+      <div className="max-w-[1200px] mx-auto my-[50px]">
         {/* Gallery Tab Container */}
         <div className="flex gap-[40px] justify-center">
           <h2
