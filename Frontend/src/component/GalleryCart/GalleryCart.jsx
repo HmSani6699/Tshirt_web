@@ -13,7 +13,7 @@ const GalleryCart = () => {
   return (
     <div className=" rounded-md">
       {/* Cart image */}
-      <div className="h-[270px] bg-[#eeeeee] relative group">
+      <div className="h-[300px] bg-[#eeeeee] relative group">
         <img
           className="h-full w-full rounded-md"
           src={cart_image}
@@ -22,14 +22,26 @@ const GalleryCart = () => {
         {/* Hover content */}
         <div className="absolute inset-0 bg-[#cbc9c9a2] transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-10 ">
           <div className="flex flex-col items-end  gap-[15px] pt-[15px] pr-[10px]">
-            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
+            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full has-tooltip">
               <GoHeart className="hover:text-white" />
+              <span className="tooltip relative shadow-lg p-[5px] bg-[#383838] text-white -ml-[160px]  whitespace-nowrap text-[13px] ">
+                <p className="relative z-[2]">Add to Whislist</p>
+                <div className="bg-[#383838] p-[7px]  rotate-[135deg] absolute top-[8px] -right-[4px]"></div>
+              </span>
             </div>
-            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
+            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full has-tooltip">
               <SlEye className="hover:text-white" />
+              <span className="tooltip relative shadow-lg p-[5px] bg-[#383838] text-white -ml-[135px]  whitespace-nowrap text-[13px] ">
+                <p className="relative z-[2]"> Quick View</p>
+                <div className="bg-[#383838] p-[7px]  rotate-[135deg] absolute top-[8px] -right-[4px]"></div>
+              </span>
             </div>
-            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full">
+            <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full has-tooltip">
               <GoLock className="hover:text-white" />
+              <span className="tooltip relative shadow-lg p-[5px] bg-[#383838] text-white -ml-[140px]  whitespace-nowrap text-[13px] ">
+                <p className="relative z-[2]">Add to Cart</p>
+                <div className="bg-[#383838] p-[7px]  rotate-[135deg] absolute top-[8px] -right-[4px]"></div>
+              </span>
             </div>
           </div>
           <div className="absolute bottom-0 w-full flex items-center bg-red-400 justify-center">
@@ -56,7 +68,12 @@ const GalleryCart = () => {
             <MdOutlineStarBorder className="text-red-400" />
           </div>
         </div>
-        <h2 className="font-semibold mt-[6px]">$20.00</h2>
+        <div className="flex gap-[10px] text-center justify-center">
+          <h2 className="font-semibold mt-[6px] text-gray-500 ">
+            <del>$20.00</del>
+          </h2>
+          <h2 className="font-semibold mt-[6px]">$20.00</h2>
+        </div>
       </div>
     </div>
   );
