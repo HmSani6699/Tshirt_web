@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         nunito: ['"Nunito Sans"', "sans-serif"],
       },
+      backgroundImage: {
+        "hero-pattern": "url('/img/deals.webp')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [],
