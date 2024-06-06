@@ -5,9 +5,9 @@ import ManWomanCart from "../../../component/ManWomanCart/ManWomanCart";
 
 const Man = () => {
   return (
-    <div className="flex  w-full h-[900px] my-[50px]  overflow-hidden">
+    <div className="flex  w-full h-[750px] my-[50px]  overflow-hidden">
       {/* left content */}
-      <div className=" w-[40%] h-full border border-red-700 ">
+      <div className=" w-[40%] h-full  ">
         <img className="w-full h-full" src={man_img} alt="" />
       </div>
       {/* Right content */}

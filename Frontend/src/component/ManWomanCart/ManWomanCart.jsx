@@ -10,9 +10,9 @@ import { SlEye } from "react-icons/sl";
 
 const ManWomanCart = ({ img }) => {
   return (
-    <div className=" rounded-md">
+    <div className=" rounded-md group">
       {/* Cart image */}
-      <div className="h-[250px] bg-[#eeeeee] relative group">
+      <div className="h-[250px] bg-[#eeeeee] relative ">
         <img className="h-full w-full rounded-md" src={img} alt="Cart item" />
         {/* Hover content */}
         <div className="absolute inset-0  transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-10 ">
@@ -39,11 +39,11 @@ const ManWomanCart = ({ img }) => {
               </span>
             </div>
           </div>
-          <div className="absolute bottom-0 w-full flex items-center bg-red-400 justify-center">
+          {/* <div className="absolute bottom-0 w-full flex items-center bg-red-400 justify-center">
             <button className=" w-full text-white py-[10px] ">
               QUICK VIEW
             </button>
-          </div>
+          </div> */}
         </div>
         {/* Discount div */}
         <div className="absolute top-[20px] left-0 w-[60px] pl-[10px] rounded-r-full bg-red-400 text-white">
@@ -65,11 +65,24 @@ const ManWomanCart = ({ img }) => {
             <MdOutlineStarBorder className="text-red-400" />
           </div>
         </div> */}
-        <div className="flex gap-[10px] text-center ">
+        {/* <div className="flex gap-[10px] text-center ">
           <h2 className="font-semibold mt-[4px] text-gray-500 ">
             <del>$20.00</del>
           </h2>
           <h2 className="font-semibold mt-[6px]">$20.00</h2>
+        </div> */}
+        <div className="relative overflow-hidden  h-[24px]">
+          <div className="absolute top-0 transition-transform transform group-hover:-translate-y-full duration-500">
+            <div className="flex gap-[10px] text-center ">
+              <h2 className="font-semibold mt-[4px] text-gray-500 ">
+                <del>$20.00</del>
+              </h2>
+              <h2 className="font-semibold mt-[6px]">$20.00</h2>
+            </div>
+          </div>
+          <h2 className="absolute top-full transition-transform transform translate-y-0 group-hover:translate-y-[-100%] duration-500 cursor-pointer border-gray-300 hover:text-red-400 hover:underline">
+            Quick View
+          </h2>
         </div>
       </div>
     </div>

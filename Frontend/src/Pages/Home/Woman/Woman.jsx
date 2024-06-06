@@ -4,11 +4,11 @@ import GalleryCart from "../../../component/GalleryCart/GalleryCart";
 import ManWomanCart from "../../../component/ManWomanCart/ManWomanCart";
 const Woman = () => {
   return (
-    <div className="flex  w-full h-[900px] my-[100px]  overflow-hidden">
+    <div className="flex  w-full h-[750px] my-[100px]  overflow-hidden">
       {/* left content */}
-      <div className=" w-[60%] pl-[30px] pr-[100px]">
+      <div className=" w-[60%] pr-[30px] pl-[100px]">
         <div className="border-b border-gray-300">
-          <h2 className="text-[25px] font-semibold pb-[6px]">Man Product</h2>
+          <h2 className="text-[25px] font-semibold pb-[6px]">Woman Product</h2>
         </div>
 
         {/* Product container */}
@@ -20,7 +20,7 @@ const Woman = () => {
       </div>
 
       {/* Right content */}
-      <div className=" w-[40%] h-full border border-red-700 ">
+      <div className=" w-[40%] h-full  ">
         <img className="w-full h-full" src={woman_img} alt="" />
       </div>
     </div>
