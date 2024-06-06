@@ -3,7 +3,7 @@ import FeaturedCart from "../../../component/FeaturedCart/FeaturedCart";
 
 const Featured = () => {
   return (
-    <div className="max-w-[1200px] mx-auto mb-[100px] ">
+    <div className="max-w-[1200px] mx-auto mb-[30px] ">
       <h2 className="text-[25px] text-[#333333] text-center">
         Featured Product
       </h2>

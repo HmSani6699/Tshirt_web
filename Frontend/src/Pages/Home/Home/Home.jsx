@@ -9,6 +9,7 @@ import Man from "../Man/Man";
 import Woman from "../Woman/Woman";
 import ProductOffers from "../ProductOffers/ProductOffers";
 import TopProduct from "../TopProduct/TopProduct";
+import BrandLogo from "../BrandLogo/BrandLogo";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <Woman />
       <TopProduct />
       <Featured />
+      <BrandLogo />
       <Footer />
     </div>
   );
