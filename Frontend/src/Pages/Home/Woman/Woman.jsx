@@ -10,7 +10,6 @@ const Woman = () => {
         <div className="border-b border-gray-300">
           <h2 className="text-[25px] font-semibold pb-[6px]">Woman Product</h2>
         </div>
-
         {/* Product container */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-[25px] mt-[40px]">
           {Array.from({ length: 6 }).map((item) => (
