@@ -7,6 +7,8 @@ import Deals from "../Deals/Deals";
 import Featured from "../Featured/Featured";
 import Man from "../Man/Man";
 import Woman from "../Woman/Woman";
+import ProductOffers from "../ProductOffers/ProductOffers";
+import TopProduct from "../TopProduct/TopProduct";
 
 const Home = () => {
   return (
@@ -16,7 +18,9 @@ const Home = () => {
       <Gallery />
       <Deals />
       <Man />
+      <ProductOffers />
       <Woman />
+      <TopProduct />
       <Featured />
       <Footer />
     </div>
