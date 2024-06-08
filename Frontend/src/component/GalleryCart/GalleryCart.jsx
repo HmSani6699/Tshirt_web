@@ -8,6 +8,7 @@ import {
 import { GoHeart, GoLock } from "react-icons/go";
 import { SlEye } from "react-icons/sl";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const GalleryCart = () => {
   return (
@@ -20,7 +21,7 @@ const GalleryCart = () => {
           alt="Cart item"
         />
         {/* Hover content */}
-        <div className="absolute inset-0 bg-[#cbc9c9a2] transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-10 ">
+        <div className="absolute inset-0  transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-10 ">
           <div className="flex flex-col items-end  gap-[15px] pt-[15px] pr-[10px]">
             <div className="h-[35px] w-[35px] cursor-pointer shadow-md hover:bg-red-400 bg-white flex items-center justify-center rounded-full has-tooltip">
               <GoHeart className="hover:text-white" />
@@ -45,9 +46,12 @@ const GalleryCart = () => {
             </div>
           </div>
           <div className="absolute bottom-0 w-full flex items-center bg-red-400 justify-center">
-            <button className=" w-full text-white py-[10px] ">
-              QUICK VIEW
-            </button>
+            <Link to="/product-details">
+              {" "}
+              <button className=" w-full text-white py-[10px] ">
+                QUICK VIEW
+              </button>{" "}
+            </Link>
           </div>
         </div>
         {/* Discount div */}
